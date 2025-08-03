@@ -5,7 +5,7 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         //Initial message
-        System.out.println("Welcome to the Gordura Bank!");
+        System.out.println("Welcome to the Bank!");
 
         //account number
         int accountNumber;
@@ -64,7 +64,7 @@ public class Main {
             }
         }
 
-        // making a withdraw
+        // making a withdrawal
         System.out.println("Do you want to make a withdraw? (y/n)");
         answer = sc.next().charAt(0);
         while (true) {
