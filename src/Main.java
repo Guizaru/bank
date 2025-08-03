@@ -82,5 +82,6 @@ public class Main {
                 answer = sc.next().charAt(0);
             }
         }
+        sc.close();
     }
 }
