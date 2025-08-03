@@ -14,8 +14,11 @@ public class Main {
         do {
             accountNumber = sc.nextInt();
             number = String.valueOf(accountNumber);
-            if (number.length() != 4) {
-                System.out.println("Please, type at least 4 numbers.");
+            if (number.length() < 4) {
+                System.out.println("Invalid number. You need to type 4 numbers. Please try again.");
+            }
+            if (number.length() > 4) {
+                System.out.println("Invalid number. You cannot type more than 4 numbers. Please try again.");
             }
         } while (number.length() != 4);
         System.out.println("Proceeding...");
@@ -63,7 +66,6 @@ public class Main {
                 answer = sc.next().charAt(0);
             }
         }
-
         // making a withdrawal
         System.out.println("Do you want to make a withdraw? (y/n)");
         answer = sc.next().charAt(0);
