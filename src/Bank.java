@@ -89,20 +89,7 @@ public class Bank {
         Account account = new Account(accountNumber, accountName, balance);
         System.out.println("Your account has been created successfully.");
         System.out.println("Account data: \n" + account);
-        System.out.print("\nWould you want to make a new operation? Please, enter y or n: ");
-        answer = sc.next().charAt(0);
-        while (true) {
-            if (answer == 'y') {
-                System.out.println("Proceeding to menu...");
-                break;
-            } else if (answer == 'n') {
-                System.out.println("Thank your for using our bank!");
-                System.exit(0);
-            } else {
-                System.out.print("Invalid answer, please enter y or n: ");
-                answer = sc.next().charAt(0);
-            }
-        }
+        askContinue(sc);
         return account;
     }
     private static void deposit(Scanner sc, Account account) {
@@ -110,20 +97,7 @@ public class Bank {
         double newDeposit = sc.nextDouble();
         account.deposit(newDeposit);
         System.out.println("Updated account data:\n" + account);
-        System.out.print("\nWould you like to make a new operation? Please, enter y or n: ");
-        char answer = sc.next().charAt(0);
-        while (true) {
-            if (answer == 'y') {
-                System.out.println("Proceeding to menu...");
-                break;
-            } else if (answer == 'n') {
-                System.out.println("Thank your for using our bank!");
-                System.exit(0);
-            } else {
-                System.out.print("Invalid answer, please enter y or n: ");
-                answer = sc.next().charAt(0);
-            }
-        }
+        askContinue(sc);
     }
     private static void withdraw(Scanner sc, Account account){
         // making a withdrawal
@@ -131,6 +105,15 @@ public class Bank {
         double newWithdraw = sc.nextDouble();
         account.withdraw(newWithdraw);
         System.out.print("Updated account data:\n" + account);
+        askContinue(sc);
+    }
+    private static void accountData(Scanner sc, Account account) {
+        //shows Account data
+        System.out.println(account);
+        //new operation
+        askContinue(sc);
+    }
+    private static void askContinue(Scanner sc) {
         System.out.print("\nWould you like to make a new operation? Please, enter y or n: ");
         char answer = sc.next().charAt(0);
         while (true) {
@@ -138,29 +121,10 @@ public class Bank {
                 System.out.println("Proceeding to menu...");
                 break;
             } else if (answer == 'n') {
-                System.out.println("Thank your for using our bank!");
+                System.out.println("Thank you for using our bank!");
                 System.exit(0);
             } else {
                 System.out.print("Invalid answer, please enter y or n: ");
-                answer = sc.next().charAt(0);
-            }
-        }
-    }
-    private static void accountData(Scanner sc, Account account) {
-        //shows Account data
-        System.out.println(account);
-
-        System.out.print("\nWould you want to make a new operation? Please, enter y or n: ");
-        char answer = sc.next().charAt(0);
-        while (true) {
-            if (answer == 'y') {
-                System.out.println("Proceeding to menu...");
-                break;
-            } else if (answer == 'n') {
-                System.out.println("Thank your for using our bank!");
-                System.exit(0);
-            } else {
-                System.out.println("Invalid answer, please enter y or n");
                 answer = sc.next().charAt(0);
             }
         }
