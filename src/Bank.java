@@ -10,7 +10,6 @@ public class Bank {
         Account account = null;
         int option;
         do {
-            //menu
             System.out.print(menu());
             option = sc.nextInt();
             switch (option) {
@@ -50,7 +49,6 @@ public class Bank {
         } while (option != 0);
     }
     private static Account createAccount(Scanner sc) {
-        //account number
         System.out.print("\nPlease, select 4 numbers to create a new account number. You cannot type more or less than 4 numbers: ");
         int accountNumber;
         String number;
@@ -67,10 +65,8 @@ public class Bank {
         } while (number.length() != 4);
         System.out.println("Proceeding...");
         sc.nextLine();
-        //account name
         System.out.print("Please, enter your name: ");
         String accountName = sc.nextLine();
-        //initial deposit
         System.out.print("Would you like to make an initial deposit? Type y or n: ");
         char answer = sc.next().charAt(0);
         while (true) {
@@ -100,7 +96,6 @@ public class Bank {
         askContinue(sc);
     }
     private static void withdraw(Scanner sc, Account account){
-        // making a withdrawal
         System.out.print("Enter withdraw value: ");
         double newWithdraw = sc.nextDouble();
         account.withdraw(newWithdraw);
@@ -108,9 +103,7 @@ public class Bank {
         askContinue(sc);
     }
     private static void accountData(Scanner sc, Account account) {
-        //shows Account data
         System.out.println(account);
-        //new operation
         askContinue(sc);
     }
     private static void askContinue(Scanner sc) {
