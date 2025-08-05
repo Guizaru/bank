@@ -1,3 +1,4 @@
+
 public class Account {
     private final int accountNumber;
     private String name;
@@ -27,8 +28,8 @@ public class Account {
         balance -= draw + 5.00;
     }
     public String toString() {
-        return "Account "+ accountNumber+ ","+
-                " Holder: " + name + ","+
+        return "Account number: "+ accountNumber+ " |"+
+                " Holder: " + name + " |"+
                 " Balance: "+ "$ " +balance;
     }
 }
