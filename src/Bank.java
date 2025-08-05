@@ -6,7 +6,7 @@ public class Bank {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         System.out.println("=== WELCOME TO THE BANK===");
-        System.out.println("=== PLEASE, SELECT A OPERATION ON THE MENU BELOW: ===");
+        System.out.println("=== PLEASE, SELECT AN OPERATION ON THE MENU BELOW: ===");
         Account account = null;
         int option;
         do {
@@ -51,7 +51,7 @@ public class Bank {
     }
     private static Account createAccount(Scanner sc) {
         //account number
-        System.out.print("\nPlease, select 4 numbers to create a new account number. You cannot type more or less than for numbers: ");
+        System.out.print("\nPlease, select 4 numbers to create a new account number. You cannot type more or less than 4 numbers: ");
         int accountNumber;
         String number;
         double balance = 0.0;
