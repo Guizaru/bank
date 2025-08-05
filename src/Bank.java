@@ -96,10 +96,10 @@ public class Bank {
                 System.out.println("Proceeding to menu...");
                 break;
             } else if (answer == 'n') {
-                System.out.println("Thank your for using our bank");
+                System.out.println("Thank your for using our bank!");
                 System.exit(0);
             } else {
-                System.out.println("Invalid answer, please enter y or n");
+                System.out.print("Invalid answer, please enter y or n: ");
                 answer = sc.next().charAt(0);
             }
         }
@@ -117,10 +117,10 @@ public class Bank {
                 System.out.println("Proceeding to menu...");
                 break;
             } else if (answer == 'n') {
-                System.out.println("Thank your for using our bank");
+                System.out.println("Thank your for using our bank!");
                 System.exit(0);
             } else {
-                System.out.println("Invalid answer, please enter y or n");
+                System.out.print("Invalid answer, please enter y or n: ");
                 answer = sc.next().charAt(0);
             }
         }
@@ -138,10 +138,10 @@ public class Bank {
                 System.out.println("Proceeding to menu...");
                 break;
             } else if (answer == 'n') {
-                System.out.println("Thank your for using our bank");
+                System.out.println("Thank your for using our bank!");
                 System.exit(0);
             } else {
-                System.out.println("Invalid answer, please enter y or n");
+                System.out.print("Invalid answer, please enter y or n: ");
                 answer = sc.next().charAt(0);
             }
         }
@@ -157,7 +157,7 @@ public class Bank {
                 System.out.println("Proceeding to menu...");
                 break;
             } else if (answer == 'n') {
-                System.out.println("Thank your for using our bank");
+                System.out.println("Thank your for using our bank!");
                 System.exit(0);
             } else {
                 System.out.println("Invalid answer, please enter y or n");
