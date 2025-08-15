@@ -45,7 +45,7 @@ public class Account {
             System.out.println("Invalid value!");
             return;
         }
-        double totalToWithdraw = draw + 5.00;
+        double totalToWithdraw = draw ;
         if (totalToWithdraw > balance){
             System.out.println("Insufficient funds.");
             return;
