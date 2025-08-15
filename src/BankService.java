@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class BankService {
     static Account createAccount(Scanner sc) {
-        System.out.println("\nPlease, select 4 numbers to create a new account number.");
+        System.out.println("\nPlease, select 4 digits to create a new account number.");
         System.out.print("You cannot type more or less than 4 numbers: ");
 
         int accountNumber;
