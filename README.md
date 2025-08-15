@@ -11,7 +11,6 @@ A simple console-based banking system implemented in Java, featuring account man
 
 -  **Banking Operations**
   - Secure deposits with password authentication
-  - Withdrawals with $5.00 fee
   - Balance inquiry
 
 -  **Security**
