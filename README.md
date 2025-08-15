@@ -1,13 +1,19 @@
-## Bank Account Simulator (Java)
+# Java Banking System
 
-A simple console-based Java application that simulates basic banking operations such as account creation, deposits, and withdrawals. The project was developed to practice Object-Oriented Programming (OOP) principles in Java.
-
----
+A simple console-based banking system implemented in Java, featuring account management, deposits, withdrawals, and password authentication.
 
 ## Features
 
-- Create a bank account with a unique 4-digit number and account holder name
-- Optional initial deposit
-- Make deposits and withdrawals
-- Automatic withdrawal fee applied
-- Input validation for user entries
+- **Account Creation**
+  - 4-digit account number validation
+  - Secure 4-digit password setup
+  - Optional initial deposit
+
+-  **Banking Operations**
+  - Secure deposits with password authentication
+  - Withdrawals with $5.00 fee
+  - Balance inquiry
+
+-  **Security**
+  - Password-protected transactions
+  - Input validation for all operations
