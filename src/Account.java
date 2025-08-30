@@ -1,3 +1,4 @@
+package entities;
 
 public class Account {
     private final int accountNumber;
