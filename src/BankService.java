@@ -1,4 +1,7 @@
+package application;
+import entities.Account;
 import java.util.Scanner;
+
 public class BankService {
     static Account createAccount(Scanner sc) {
         System.out.println("\nPlease, select 4 digits to create a new account number.");
@@ -73,7 +76,6 @@ public class BankService {
     }
     static void deposit(Scanner sc, Account account) {
         if(!authenticate(sc,account)) return;
-
         System.out.print("Enter deposit value: ");
         double newDeposit = sc.nextDouble();
         account.deposit(newDeposit);
@@ -83,7 +85,6 @@ public class BankService {
 
     static void withdraw(Scanner sc, Account account) {
         if(!authenticate(sc,account)) return;
-
         System.out.print("Enter withdraw value: ");
         double newWithdraw = sc.nextDouble();
         account.withdraw(newWithdraw);
