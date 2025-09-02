@@ -1,10 +1,10 @@
 package entities;
 
 public class Account {
-    private final int accountNumber;
+    private final Integer accountNumber;
     private String password;
     private String name;
-    private double balance;
+    private Double balance;
 
     public Account(int accountNumber, String name, double balance, String password) {
         this.accountNumber = accountNumber;
